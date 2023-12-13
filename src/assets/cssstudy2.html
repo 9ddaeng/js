@@ -1,0 +1,96 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Document</title>
+  <style>
+    body {
+      width: 1050px;
+      overflow: hidden;
+    }
+    div {
+      border: 0.5px solid lightgray;
+      background-color: burlywood;
+      height: 200px;
+      float: left;
+    }
+
+    #header1, #section1, #footer1, #header3, #section3, #footer3 {
+      width: 200px;
+    }
+    #header2, #section2, #footer2 {
+      width: 600px;
+    }
+
+    #header1 {
+      border-radius: 20% 0 20% 0;
+    }
+    #header2 {
+      border-radius: 0% 0 20% 20%;
+    }
+    #header3 {
+      border-radius: 0% 20% 0% 20%;
+    }
+    #section1 {
+      border-radius: 0% 20% 20% 0;
+    }
+    #section2 {
+      border-radius: 20% 20% 20% 20%;
+    }
+    #section3 {
+      border-radius: 20% 0% 0% 20%;
+    }
+    #footer1 {
+      border-radius: 0% 20% 0% 20%;
+    }
+    #footer2 {
+      border-radius: 20% 20% 0% 0%;
+    }
+    #footer3 {
+      border-radius: 20% 0 20% 0;
+    }
+
+    section, footer {
+      clear: both;
+      overflow: hidden;
+    }
+
+    section li {
+      float: left;
+      list-style: none;
+      font-weight: bold;
+      margin: 5px auto;
+      padding: 5px 35px;
+    }
+
+
+  </style>
+</head>
+<body>
+  <header>
+    <div id="header1"><p></p></div>
+    <div id="header2"><p></p></div>
+    <div id="header3"><p></p></div>
+  </header>
+
+  <section>
+    <div id="section1"><p></p></div>
+    <div id="section2">
+      <ul>
+        <li>menu1</li>
+        <li>menu2</li>
+        <li>menu3</li>
+        <li>menu4</li>
+      </ul>
+    </div>
+    <div id="section3"><p></p></div>
+  </section>
+
+  <footer>
+    <div id="footer1"><p></p></div>
+    <div id="footer2"><p></p></div>
+    <div id="footer3"><p></p></div>
+  </footer>
+</body>
+</html>
