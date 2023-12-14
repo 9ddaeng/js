@@ -1,0 +1,66 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>InstagramLayOut</title>
+  <style>
+    body {
+      margin: 0;
+      overflow: hidden;
+    }
+
+
+    #nav {
+      position: absolute;
+      top: 0;
+      left: 0;
+      width: 200px;
+      height: 100%;
+      float: left;
+      border-right: 1px solid gray;
+    }
+
+    #aside {
+      position: absolute;
+      left: 1140px;
+      border-left: 1px solid gray;
+      height: 100%;
+    }
+
+    #container {
+      position: relative;
+      left: 200px;
+      width: 100%;
+      float: left;
+      
+    }
+    #carousel {
+      border-bottom: 1px solid gray;
+      width: 940px;
+      height: 70px;
+    }
+
+
+  </style>
+</head>
+<body>
+  <nav class="upper" id="nav">
+    <p>sidebar</p>
+  </nav>
+
+  <div id="container">
+    <div class="upper" id="carousel">
+      <p>carousel</p>
+    </div>
+
+    <div class="upper" id="contents">
+      <p>contents</p>
+    </div>
+  </div>
+
+    <aside class="upper" id="aside">
+      <p>aside</p>
+    </aside>
+</body>
+</html>

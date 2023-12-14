@@ -1,0 +1,194 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Gnb, Lnb가 있는 레이아웃</title>
+  <style>
+    * {margin: 0}
+    nav, section { border: 1px solid lightgray;}
+
+    #gnb {
+      background-color: dimgray;
+      color: white;
+      font-size: 15px;
+      padding-top: 5px;
+      overflow: hidden;
+    }
+
+    #gnb li {
+      list-style: none;
+      float: left;
+      padding-right: 5%;
+    }
+
+    #gnb li:hover {
+      color: orange;
+      font-size: 18px;
+    }
+
+    #first-sec {
+      padding: 20px auto;
+      height: 300px;
+      overflow: hidden;
+      border-bottom: none;
+    }
+
+    #g_logo {
+      width: 200px;
+      position: absolute;
+      top: 120px;
+      left: 600px;
+    }
+
+
+    #first-sec li {
+      list-style: none;
+      border: 1px solid gray;
+      float: left;
+      padding: 10px 10px;
+      position: relative;
+      top: 220px;
+      left: 1000px;
+    }
+
+    #first-sec li:hover {
+      background-color: red;
+      color: white;
+      font-weight: bold;
+    }
+
+    #first-sec li:nth-child(1) {
+      border-radius: 20% 0 0 20%;
+    }
+
+    #first-sec li:nth-child(4) {
+      border-radius: 0 20% 20% 0;
+    }
+
+    #lnb {
+      overflow: hidden;
+      border-top: 1px dashed lightgray;
+    }
+
+    #wrap2 {
+      width: 1000px;
+      margin: 0 auto;
+      height: 25px;
+      line-height: 25px;
+      font-size: 13px;
+    }
+
+    #lnb li, select {
+      list-style: none;
+      float: left;
+      width: 100px;
+      text-align: center;
+    }
+
+    #lnb li:hover {
+      font-weight: bold;
+      font-size: 18px;
+    }
+
+    #second-sec {
+      height: 360px;
+      overflow: hidden;
+    }
+
+    #sidebar1, #sidebar2 {
+      border: 1px solid lightgray;
+    }
+
+    #sidebar1:hover, #sidebar2:hover {
+      background-color: green;
+    }
+
+    #sidebar1 {
+      display:inline-block;
+      width: 500px;
+      height: 200px;
+    }
+    #sidebar2 {
+      display:inline-block;
+      width: 300px;
+      height: 200px;
+    }
+
+    #wrap {
+      position: relative;
+      top: 50px;
+      left: 320px;
+    }
+
+    #wrap3 {
+      width: 1000px;
+      margin: 0 auto;
+      height: 30px;
+      line-height: 30px;
+    }
+
+  </style>
+</head>
+<body>
+  <div id="container">
+      <nav id="gnb">
+        <div id="wrap3">
+        <ul>
+          <li>Login</li>
+          <li>Join Us</li>
+          <li>Wish List</li>
+          <li>Cart</li>
+          <li>Order</li>
+          <li>My Page</li>
+          <li>Notice</li>
+          <li>QnA</li>
+          <li>Review</li>
+          <li>Favorite</li>
+        </ul>
+      </div>
+      </nav>
+
+    <section id="first-sec">
+      <div id="logo">
+        <img src="https://www.google.com/images/branding/googlelogo/2x/googlelogo_color_272x92dp.png" alt="google"
+        id = "g_logo"/>
+      </div>
+
+      <ul>
+        <li>hit1</li>
+        <li>hit2</li>
+        <li>hit3</li>
+        <li>hit4</li>
+      </ul>
+    </section>
+  
+    <nav id="lnb">
+      <div id="wrap2">
+      <ul>
+        <li>menu1</li>
+        <li>menu2</li>
+        <li>menu3</li>
+        <li>menu4</li>
+        <li>menu5</li>
+        <li>menu6</li>
+        <li>menu7</li>
+        <li>menu8</li>
+        <select>
+          <option>서울</option>
+          <option>경기</option>
+        </select>
+      </ul>
+    </div>
+    </nav>
+
+    <section id="second-sec">
+      <div id="wrap">
+        <div id="sidebar1"> <p>sidebar1</p></div>
+        <div id="sidebar2"> <p>sidebar2</p></div>
+      </div>
+      </section>
+  </div>
+
+</body>
+</html>
